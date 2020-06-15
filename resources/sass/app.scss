@@ -6,3 +6,20 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+[role="main"] {
+    padding: 48px 0 0 0;
+}
+
+.sidebar {
+    padding: 48px 0 0 0;
+}
+
+#top-nav {
+    flex-direction: row;
+
+    .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
