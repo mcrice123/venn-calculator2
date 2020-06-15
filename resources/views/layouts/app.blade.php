@@ -58,6 +58,11 @@
         </nav>
         <div class="container-fluid">
             <div class="row">
+            @guest
+                <main role="main" class="col-md-12 px-4">
+                    @yield('content')
+                </main>
+            @else
                 <nav class="col-md-2 d-none d-md-flex bg-light sidebar">
                     <div class="sidebar-sticky">
                         <ul class="nav flex-column">
@@ -82,6 +87,8 @@
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                     @yield('content')
                 </main>
+            @endguest
+
             </div>
         </div>
     </div>
